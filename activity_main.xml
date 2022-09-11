@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/alian"
+        android:layout_width="113dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="266dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="108dp"
+        android:onClick="animation"
+        app:layout_constraintBottom_toTopOf="@+id/all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/doremon_broom"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="82dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="431dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/final_plane" />
+
+    <ImageView
+        android:id="@+id/all"
+        android:layout_width="244dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/all_doremon" />
+
+    <ImageView
+        android:id="@+id/doremon"
+        android:layout_width="98dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="flying"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/doremon_superman"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/nobita"
+        android:layout_width="131dp"
+        android:layout_height="141dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/alian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/nobita" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
